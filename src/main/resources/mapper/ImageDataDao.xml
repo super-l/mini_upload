@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.nepenthes.miniupload.dao.ImageDataDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="cn.nepenthes.miniupload.entity.ImageDataEntity" id="imageDataMap">
+        <result property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="method" column="method"/>
+        <result property="imagePath" column="image_path"/>
+        <result property="imageName" column="image_name"/>
+        <result property="imageSize" column="image_size"/>
+        <result property="imageUrl" column="image_url"/>
+        <result property="imageThumUrl" column="image_thum_url"/>
+        <result property="createdAt" column="created_at"/>
+    </resultMap>
+
+
+</mapper>
